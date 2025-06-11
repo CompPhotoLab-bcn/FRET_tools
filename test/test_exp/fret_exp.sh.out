@@ -1,0 +1,61 @@
+                                                                              
+                                                                  ▓▒▒▒▒       
+                                                      ░▓▓▒▒▒    ▒▓▒▒▒▒░       
+                                ░▓▒▒▒▒    ▓▓▒▒░░░    ▓▒▒░░░░░   ░░▒▒▒  ▒      
+           ░▒░░░░░    ▒▒░░░░    ▒▒░░░░░   ░░▒░░░░░   ░░░▒░░░░░ ░░░░░     ▒    
+             ░░░░    ░░░░░░░   ░░░▒░░░░  ░░░░▒░░░░░ ░░░░░▒░░░░░▒░░░           
+              ░░░░░  ░░░▒░░░░░ ░░░░▒░░░░░░░░░ ▒▒░░▒░▒░░░  ▓▒▒▒▓▓▓▒▒           
+              ▒▒▒▒▒░░░░░ ▒▒▒▒▒▒░░░░ ▓▒▒▒▒▒░░░  ▒▒▒▒▓▓▒▒░                      
+           ░    ▓▓▓▓▓▒▒░   ▓▓▓▓▓▒▒                                            
+   ░     ____                      ____  _           _        _          _    
+       / ___|___  _ __ ___  _ __ |  _ \| |__   ___ | |_ ___ | |    __ _| |__  
+      | |   / _ \| '_ ` _ \| '_ \| |_) | '_ \ / _ \| __/ _ \| |   / _` | '_ \ 
+ ░    | |__| (_) | | | | | | |_) |  __/| | | | (_) | || (_) | |__| (_| | |_) |
+       \____\___/|_| |_| |_| .__/|_|   |_| |_|\___/ \__\___/|_____\__,_|_.__/ 
+   ░                       |_|                                                
+    ░                                                        ▓▓▒▒▒▒▒          
+      ▒░░░ ▒                                        ░▓▒▒▒  ░▒▒▒▒░   ░         
+          ░░░░░                ▓▒▒     ▓▓▓▒▒▒    ▒▓▓▒░░░░░ ░░░░░     ▒ ▒      
+          ░░░░     ▒▒▒▒▒▒    ▒▒▒░░░    ▒▒▒░░░░   ░░░░▒░░   ░░  ░      ▒▒      
+          ░░░░    ░░░░░░░░  ░░▒░░░░   ░░░░░░░░  ░░░░░░ ░░░░░░░░               
+          ▒▒▒░░ ░░░░░░░  ░  ░░░▒▒░░░  ░░░░░░░░░░░░░░    ▒▒▒▒▒▒▓               
+           ░▓▓▒▒░░░ ░░░░░░ ░░░  ▒▒▒▒▒▒▒░░░ ▒▒▒▒▒▒▒▒░░                         
+                ▓░░  ▒░░░░░░░░     ▒▓▓▓░    ░▓▓▓▒                             
+                     ▓▒▒▒▒▒▒░                                                 
+                                   ╭-------------------------------------╮    
+                                   |     F R E T - E X P vers 1.0        |    
+                                   ╞ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ╡    
+                                   | Carles Curutchet                    |    
+                                   | Ozge Ergun                          |    
+                                   | www.ub.edu/cplab                    |    
+                                   | www.allodd-itn.eu                   |    
+                                   ╰-------------------------------------╯    
+
+Reference spectra (Protein donor only):
+Ligand concentration (acceptor): 0.0 μM
+Protein concentration (donor): 5.0 μM
+Wavelength: 315.0 nm
+Reference intensity at 315.0 nm 11.7857
+
+Calculation of binding constant: Linear regression data:
+log([L]): 1.0000, log(F0/F - 1): -0.4456
+log([L]): 1.6990, log(F0/F - 1): 0.0822
+log([L]): 2.0000, log(F0/F - 1): 0.3797
+
+Equation to fit:
+log(F0/F - 1) = log(Kb) + n log([L])
+
+Linear regression results:
+Slope (n, binding molecularity): 0.8129
+Intercept (log(Kb)): -1.2679
+Association constant Kb: 0.0540 μM⁻¹
+Dissociation constant Kd: 18.5314 μM
+Correlation coefficient (r): 0.9978
+
+FRET efficiency uncorrected/corrected by percent of free protein vs complex:
+   l_concentration  p_concentration  ...  percent_complex  efficiency_corrected
+1             10.0              5.0  ...         0.350492              0.752774
+2             50.0              5.0  ...         0.729593              0.749978
+3            100.0              5.0  ...         0.843659              0.836377
+
+[3 rows x 8 columns]

@@ -1,0 +1,62 @@
+                                                                              
+                                                                  ▓▒▒▒▒       
+                                                      ░▓▓▒▒▒    ▒▓▒▒▒▒░       
+                                ░▓▒▒▒▒    ▓▓▒▒░░░    ▓▒▒░░░░░   ░░▒▒▒  ▒      
+           ░▒░░░░░    ▒▒░░░░    ▒▒░░░░░   ░░▒░░░░░   ░░░▒░░░░░ ░░░░░     ▒    
+             ░░░░    ░░░░░░░   ░░░▒░░░░  ░░░░▒░░░░░ ░░░░░▒░░░░░▒░░░           
+              ░░░░░  ░░░▒░░░░░ ░░░░▒░░░░░░░░░ ▒▒░░▒░▒░░░  ▓▒▒▒▓▓▓▒▒           
+              ▒▒▒▒▒░░░░░ ▒▒▒▒▒▒░░░░ ▓▒▒▒▒▒░░░  ▒▒▒▒▓▓▒▒░                      
+           ░    ▓▓▓▓▓▒▒░   ▓▓▓▓▓▒▒                                            
+   ░     ____                      ____  _           _        _          _    
+       / ___|___  _ __ ___  _ __ |  _ \| |__   ___ | |_ ___ | |    __ _| |__  
+      | |   / _ \| '_ ` _ \| '_ \| |_) | '_ \ / _ \| __/ _ \| |   / _` | '_ \ 
+ ░    | |__| (_) | | | | | | |_) |  __/| | | | (_) | || (_) | |__| (_| | |_) |
+       \____\___/|_| |_| |_| .__/|_|   |_| |_|\___/ \__\___/|_____\__,_|_.__/ 
+   ░                       |_|                                                
+    ░                                                        ▓▓▒▒▒▒▒          
+      ▒░░░ ▒                                        ░▓▒▒▒  ░▒▒▒▒░   ░         
+          ░░░░░                ▓▒▒     ▓▓▓▒▒▒    ▒▓▓▒░░░░░ ░░░░░     ▒ ▒      
+          ░░░░     ▒▒▒▒▒▒    ▒▒▒░░░    ▒▒▒░░░░   ░░░░▒░░   ░░  ░      ▒▒      
+          ░░░░    ░░░░░░░░  ░░▒░░░░   ░░░░░░░░  ░░░░░░ ░░░░░░░░               
+          ▒▒▒░░ ░░░░░░░  ░  ░░░▒▒░░░  ░░░░░░░░░░░░░░    ▒▒▒▒▒▒▓               
+           ░▓▓▒▒░░░ ░░░░░░ ░░░  ▒▒▒▒▒▒▒░░░ ▒▒▒▒▒▒▒▒░░                         
+                ▓░░  ▒░░░░░░░░     ▒▓▓▓░    ░▓▓▓▒                             
+                     ▓▒▒▒▒▒▒░                                                 
+                                   ╭-------------------------------------╮    
+                                   |     F R E T - T H E O  vers 1.0     |    
+                                   ╞ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ╡    
+                                   | Carles Curutchet                    |    
+                                   | Ozge Ergun                          |    
+                                   | www.ub.edu/cplab                    |    
+                                   | www.allodd-itn.eu                   |    
+                                   ╰-------------------------------------╯    
+Results for Cleft
+   FRET efficiency (intermediate averaging regime) = 3.1786e-01
+   Approximate results in the dynamic and static limits:
+   FRET efficiency (dynamic averaging regime) = 3.5387e-01
+   FRET efficiency (static averaging regime) = 2.6767e-01
+Results for IB
+   FRET efficiency (intermediate averaging regime) = 2.0499e-01
+   Approximate results in the dynamic and static limits:
+   FRET efficiency (dynamic averaging regime) = 2.0972e-01
+   FRET efficiency (static averaging regime) = 2.0165e-01
+Results for IIA-IIB
+   FRET efficiency (intermediate averaging regime) = 9.7759e-01
+   Approximate results in the dynamic and static limits:
+   FRET efficiency (dynamic averaging regime) = 9.7837e-01
+   FRET efficiency (static averaging regime) = 9.5180e-01
+Results for IIA
+   FRET efficiency (intermediate averaging regime) = 9.9597e-01
+   Approximate results in the dynamic and static limits:
+   FRET efficiency (dynamic averaging regime) = 9.9602e-01
+   FRET efficiency (static averaging regime) = 9.7957e-01
+Results for IIIA
+   FRET efficiency (intermediate averaging regime) = 1.0211e-01
+   Approximate results in the dynamic and static limits:
+   FRET efficiency (dynamic averaging regime) = 1.0368e-01
+   FRET efficiency (static averaging regime) = 9.7663e-02
+Results for IIIB
+   FRET efficiency (intermediate averaging regime) = 1.1055e-02
+   Approximate results in the dynamic and static limits:
+   FRET efficiency (dynamic averaging regime) = 1.1340e-02
+   FRET efficiency (static averaging regime) = 1.1171e-02
