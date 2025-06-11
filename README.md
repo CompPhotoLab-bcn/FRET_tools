@@ -87,12 +87,13 @@ options:
 ```
 The dataset_info input is a plain text file indicating the names of the files with fluorescence spectra to be read, and the donor (protein) and acceptor (ligand) concentrations for each one in  μM units. The program needs one spectra with 0 ligand (acceptor) concentration as reference. For example, the test provided indicates a reference HSA (human serum albumin) spectra at 5 μM and HSA-naproxen spectra at 10-100 μM ligand concentrations:
 naproxen_280nm.in contents:
+```
                         [HSA] [1N]
 HSA5_280nm.txt            5     0
 HSA5+NAP10_280nm.txt      5    10
 HSA5+NAP50_280nm.txt      5    50
 HSA5+NAP100_280nm.txt     5   100
-
+```
 Each file HSA5_280nm.txt contains a fluorescence spectra with X Y format indicating Emission wavelength and Intensity as the first two columns.
 
 FRET_THEO options
