@@ -85,8 +85,7 @@ options:
   -s SHOW_PLOT, --show_plot SHOW_PLOT
                         Whether to display the plot (detault True)
 ```
-The dataset_info input is a plain text file indicating the names of the files with fluorescence spectra to be read, and the donor (protein) and acceptor (ligand) concentrations for each one in  μM units. The program needs one spectra with 0 ligand (acceptor) concentration as reference. For example, the test provided indicates a reference HSA (human serum albumin) spectra at 5 μM and HSA-naproxen spectra at 10-100 μM ligand concentrations:
-naproxen_280nm.in contents:
+The dataset_info input is a plain text file indicating the names of the files with fluorescence spectra to be read, and the donor (protein) and acceptor (ligand) concentrations for each one in  μM units. The program needs one spectra with 0 ligand (acceptor) concentration as reference. For example, the naproxen_280nm.in file in the test provided indicates a reference HSA (human serum albumin) spectra at 5 μM and HSA-naproxen spectra at 10-100 μM ligand concentrations:
 ```
                         [HSA] [1N]
 HSA5_280nm.txt            5     0
