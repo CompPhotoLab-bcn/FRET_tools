@@ -59,6 +59,7 @@ src/fret_theo.py --help
 ```
 
 FRET_EXP options
+```
 usage: fret_exp.py [-h] [-x X_TITLE] [-y Y_TITLE] [-p PLOT_TITLE] [-W WIDTH] [-H HEIGHT] [-l WAVELENGTH] [-s SHOW_PLOT] dataset_info output_file
 
 Compute FRET efficiency from fluorescence quenching data
@@ -83,7 +84,7 @@ options:
                         Wavelength at which intensities/FRET efficiencies will be computed
   -s SHOW_PLOT, --show_plot SHOW_PLOT
                         Whether to display the plot (detault True)
-
+```
 The dataset_info input is a plain text file indicating the names of the files with fluorescence spectra to be read, and the donor (protein) and acceptor (ligand) concentrations for each one in  μM units. The program needs one spectra with 0 ligand (acceptor) concentration as reference. For example, the test provided indicates a reference HSA (human serum albumin) spectra at 5 μM and HSA-naproxen spectra at 10-100 μM ligand concentrations:
 naproxen_280nm.in contents:
                         [HSA] [1N]
@@ -95,6 +96,7 @@ HSA5+NAP100_280nm.txt     5   100
 Each file HSA5_280nm.txt contains a fluorescence spectra with X Y format indicating Emission wavelength and Intensity as the first two columns.
 
 FRET_THEO options
+```
 usage: fret_theo.py [-h] [--lifetime LIFETIME] --overlap J [--step TIMESTEP] [--coup COUP] [--out OUT]
 
 Compute FRET efficiencies from multiple electronic coupling trajectories
@@ -106,4 +108,4 @@ options:
   --step TIMESTEP      Time step in ps between coupling values in datasets (default 49 ps)
   --coup COUP          Electronic couplings file (in cm -1). Can contain mutliple columns/trajectories, with title in first line
   --out OUT            Prefix for output files with rate (ns-1) and efficiency distributions at each time t and time window
-
+```
