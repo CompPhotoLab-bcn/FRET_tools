@@ -18,15 +18,21 @@ The terms for using, copying, modifying, or distributing this code are specified
 
 ## Authors
 **Carles Curutchet**
+
 **Özge Ergün**
+
 Departament de Farmàcia i Tecnologia Farmacèutica, i Fisicoquímica & Institut de Química Teòrica i Computacional 
+
 Facultat de Farmàcia i Ciències de l'Alimentació, Universitat de Barcelona
+
 Av. Joan XXIII 27-31, 08028 Barcelona, Spain
 
 ## System requirements
 These codes are implemented with python3, and require the following python libraries.
+
 `fret_exp.py`:  `numpy`, `matplotlib` and `pandas`
-fret_theo.py:  `numpy`
+
+`fret_theo.py`:  `numpy`
 
 ## Tests
 The folder `src` contains the `fret_exp.py` and `fret_theo.py` codes.
