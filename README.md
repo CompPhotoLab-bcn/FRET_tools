@@ -17,9 +17,9 @@ D. Gonzalo, L. Cupellini and C. Curutchet, On the breakdown of Förster energy t
 The terms for using, copying, modifying, or distributing this code are specified in the file `LICENSE`
 
 ## Authors
-**Carles Curutchet**
+**Carles Curutchet, Özge Ergün**
 
-**Özge Ergün**
+Computational Photobiology Lab https://www.ub.edu/cplab
 
 Departament de Farmàcia i Tecnologia Farmacèutica, i Fisicoquímica & Institut de Química Teòrica i Computacional 
 
