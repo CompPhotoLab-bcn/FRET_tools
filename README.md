@@ -19,11 +19,15 @@ The terms for using, copying, modifying, or distributing this code are specified
 ## Contacts
 Carles Curutchet
 carles[dot]curutchet[at]ub[dot]edu
+
 Özge Ergün 
 ozge[dot]ergun[at]ub[dot]edu
 
+
 Departament de Farmàcia i Tecnologia Farmacèutica, i Fisicoquímica & Institut de Química Teòrica i Computacional 
+
 Facultat de Farmàcia i Ciències de l'Alimentació, Universitat de Barcelona
+
 Av. Joan XXIII 27-31, 08028 Barcelona, Spain
 
 ## System requirements
