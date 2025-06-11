@@ -1,5 +1,5 @@
 ## FRET tools: FRET_EXP & FRET_THEO
-This Python3 scripts implement the calculation of FRET efficiencies from fluorescence spectra (donor quenching at different acceptor concentrations) as well as from theoretical trajectories of electronic couplings. This software was developed in the framework of the ALLODD ITN project: https://www.allodd-itn.eu to analyze FRET data in protein-ligand complexes aimed at characterizing ligand binding sites. 
+This Python3 scripts implement the calculation of FRET efficiencies from fluorescence spectra (donor quenching at different acceptor concentrations) as well as from theoretical trajectories of electronic couplings. This software was developed in the framework of the ALLODD ITN project: https://www.allodd-itn.eu to screen collections of fluorescent small molecules to detect binding and analyze FRET data in protein-ligand complexes, FRET allowing to recover spatial information on the binding mode/site.
 
 fret_exp.py estimates FRET efficiency from the quenching of the protein fluorescence (donor) at a given wavelength (with minimal acceptor emission) indicated in the input. It provides a plot in PDF format showing the fluorescence spectra at different ligand (acceptor) concentrations given as input. It also fits the fluorescence quenching data to the linear equation log(F0/F - 1) = log(Kb) + n log([L]), allowing to derive the association and dissociation constants (Kb=1/Kd) and ligand molecularity (n) from the fluorescence in the absence (F0) and presence (F) of the ligand at different concentrations [L]. Finally, it uses the association constant to estimate the percentage of free protein versus complex, in order to provide corrected FRET efficiencies taking into account the actual fraction of protein-ligand complex formed. All output results are printed in the output and saved to the fret_exp_out.csv file.
 
@@ -9,8 +9,9 @@ Electronic coupling trajectories can be computed using Förster point dipole app
 
 ## References
 Information on the theoretical background can be found in these publications:
-L. Cupellini, M. Corbella, B. Mennucci and C. Curutchet, Electronic energy transfer in biomacromolecules, WIREs Comput. Mol. Sci. 2019, 9(2), e1392.
-D. Gonzalo, L. Cupellini and C. Curutchet, On the breakdown of Förster energy transfer theory due to solvent effects: atomistic simulations unveil distance-dependent dielectric screening in calmodulin, Chem. Sci. 2025, 16(8), 3693–3704.
+L. Cupellini, M. Corbella, B. Mennucci and C. Curutchet, Electronic energy transfer in biomacromolecules, WIREs Comput. Mol. Sci. 2019, 9(2), e1392. https://doi.org/10.1002/wcms.1392
+
+D. Gonzalo, L. Cupellini and C. Curutchet, On the breakdown of Förster energy transfer theory due to solvent effects: atomistic simulations unveil distance-dependent dielectric screening in calmodulin, Chem. Sci. 2025, 16(8), 3693–3704. https://doi.org/10.1039/D4SC07679F
  
 ## Disclaimer and Copyright
 The terms for using, copying, modifying, or distributing this code are specified in the file `LICENSE`
@@ -21,6 +22,7 @@ carles[dot]curutchet[at]ub[dot]edu
 Özge Ergün 
 ozge[dot]ergun[at]ub[dot]edu
 
+Departament de Farmàcia i Tecnologia Farmacèutica, i Fisicoquímica & Institut de Química Teòrica i Computacional 
 Facultat de Farmàcia i Ciències de l'Alimentació, Universitat de Barcelona
 Av. Joan XXIII 27-31, 08028 Barcelona, Spain
 
