@@ -57,7 +57,7 @@ src/fret_exp.py --help
 src/fret_theo.py --help
 ```
 
-fret_exp.py options
+**fret_exp.py options**
 ```
 usage: fret_exp.py [-h] [-x X_TITLE] [-y Y_TITLE] [-p PLOT_TITLE] [-W WIDTH] [-H HEIGHT] [-l WAVELENGTH] [-s SHOW_PLOT] dataset_info output_file
 
@@ -94,7 +94,7 @@ HSA5+NAP100_280nm.txt     5   100
 ```
 Each file `HSA5_280nm.txt` etc contains the raw data of a fluorescence spectra with X Y format indicating Emission wavelength and Intensity on the first two columns.
 
-fret_theo.py options
+**fret_theo.py options**
 ```
 usage: fret_theo.py [-h] [--lifetime LIFETIME] --overlap J [--step TIMESTEP] [--coup COUP] [--out OUT]
 
