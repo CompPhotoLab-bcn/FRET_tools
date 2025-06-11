@@ -1,9 +1,9 @@
 ## FRET tools: FRET_EXP & FRET_THEO
 This Python3 scripts implement the calculation of FRET efficiencies from fluorescence spectra (donor quenching at different acceptor concentrations) as well as from theoretical trajectories of electronic couplings. This software was developed in the framework of the ALLODD ITN project: https://www.allodd-itn.eu to screen collections of fluorescent small molecules to detect binding and analyze FRET data in protein-ligand complexes, FRET allowing to recover spatial information on the binding mode/site.
 
-fret_exp.py estimates FRET efficiency from the quenching of the protein fluorescence (donor) at a given wavelength (with minimal acceptor emission) indicated in the input. It provides a plot in PDF format showing the fluorescence spectra at different ligand (acceptor) concentrations given as input. It also fits the fluorescence quenching data to the linear equation log(F0/F - 1) = log(Kb) + n log([L]), allowing to derive the association and dissociation constants (Kb=1/Kd) and ligand molecularity (n) from the fluorescence in the absence (F0) and presence (F) of the ligand at different concentrations [L]. Finally, it uses the association constant to estimate the percentage of free protein versus complex, in order to provide corrected FRET efficiencies taking into account the actual fraction of protein-ligand complex formed. All output results are printed in the output and saved to the fret_exp_out.csv file.
+`fret_exp.py` estimates FRET efficiency from the quenching of the protein fluorescence (donor) at a given wavelength (with minimal acceptor emission) indicated in the input. It provides a plot in PDF format showing the fluorescence spectra at different ligand (acceptor) concentrations given as input. It also fits the fluorescence quenching data to the linear equation log(F0/F - 1) = log(Kb) + n log([L]), allowing to derive the association and dissociation constants (Kb=1/Kd) and ligand molecularity (n) from the fluorescence in the absence (F0) and presence (F) of the ligand at different concentrations [L]. Finally, it uses the association constant to estimate the percentage of free protein versus complex, in order to provide corrected FRET efficiencies taking into account the actual fraction of protein-ligand complex formed. All output results are printed in the output and saved to the fret_exp_out.csv file.
 
-fret_theo.py estimates theoretical FRET efficiencies from electronic coupling trajectories obtained from a Molecular Dynamics trajectory of the protein-ligand complex. It reads an input file with several datasets of electronic coupling trajectories (e.g. those obtained in different binding sites for a given ligand, or for different MD replicas). The program computes the FRET efficiency in an intermediate coupling regime, where coupling fluctuations along the trajectory can have a similar timescale compared to that of the donor excited-state decay. It then also computes more approximate FRET efficiencies in the dynamic (coupling fluctuations fast compared with the donor excited-state decay) and static (coupling fluctuations slow compared with the donor excited-state decay) limits. The timescale of the donor excited-state decay is estimated from the donor fluorescence lifetime (default value 5.78 ns, measured for human serum albumin). The code also needs as input the donor-acceptor spectral overlap value (between normalized donor emission and normalized acceptor absoroption) needed in Förster FRET golden rule expression, as well as the timestep between coupling values in the input trajectories. 
+`fret_theo.py` estimates theoretical FRET efficiencies from electronic coupling trajectories obtained from a Molecular Dynamics trajectory of the protein-ligand complex. It reads an input file with several datasets of electronic coupling trajectories (e.g. those obtained in different binding sites for a given ligand, or for different MD replicas). The program computes the FRET efficiency in an intermediate coupling regime, where coupling fluctuations along the trajectory can have a similar timescale compared to that of the donor excited-state decay. It then also computes more approximate FRET efficiencies in the dynamic (coupling fluctuations fast compared with the donor excited-state decay) and static (coupling fluctuations slow compared with the donor excited-state decay) limits. The timescale of the donor excited-state decay is estimated from the donor fluorescence lifetime (default value 5.78 ns, measured for human serum albumin). The code also needs as input the donor-acceptor spectral overlap value (between normalized donor emission and normalized acceptor absoroption) needed in Förster FRET golden rule expression, as well as the timestep between coupling values in the input trajectories. 
 
 Electronic coupling trajectories can be computed using Förster point dipole approximation, or from more rigorous calculations using QM-derived transition densities or transition charges. 
 
@@ -16,28 +16,21 @@ D. Gonzalo, L. Cupellini and C. Curutchet, On the breakdown of Förster energy t
 ## Disclaimer and Copyright
 The terms for using, copying, modifying, or distributing this code are specified in the file `LICENSE`
 
-## Contacts
-Carles Curutchet
-carles[dot]curutchet[at]ub[dot]edu
-
-Özge Ergün 
-ozge[dot]ergun[at]ub[dot]edu
-
-
+## Authors
+**Carles Curutchet**
+**Özge Ergün**
 Departament de Farmàcia i Tecnologia Farmacèutica, i Fisicoquímica & Institut de Química Teòrica i Computacional 
-
 Facultat de Farmàcia i Ciències de l'Alimentació, Universitat de Barcelona
-
 Av. Joan XXIII 27-31, 08028 Barcelona, Spain
 
 ## System requirements
 These codes are implemented with python3, and require the following python libraries.
-fret_exp.py:  numpy, argparse, matplotlib and pandas
-fret_theo.py:  numpy, argparse and os
+`fret_exp.py`:  `numpy`, `matplotlib` and `pandas`
+fret_theo.py:  `numpy`
 
 ## Tests
-The folder 'src' contains the fret_exp.py and fret_theo.py codes.
-The folder 'test' contains a tests with inputs/outputs for each code:
+The folder `src` contains the `fret_exp.py` and `fret_theo.py` codes.
+The folder `test` contains a tests with inputs/outputs for each code:
 
 Test for FRET_EXP can be executed running
 ```
@@ -85,7 +78,7 @@ options:
   -s SHOW_PLOT, --show_plot SHOW_PLOT
                         Whether to display the plot (detault True)
 ```
-The dataset_info input is a plain text file indicating the names of the files with fluorescence spectra to be read, and the donor (protein) and acceptor (ligand) concentrations for each one in  μM units. The program needs one spectra with 0 ligand (acceptor) concentration as reference. For example, the naproxen_280nm.in file in the test provided indicates a reference HSA (human serum albumin) spectra at 5 μM and HSA-naproxen spectra at 10-100 μM ligand concentrations:
+The dataset_info input is a plain text file indicating the names of the files with fluorescence spectra to be read, and the donor (protein) and acceptor (ligand) concentrations for each one in  μM units. The program needs one spectra with 0 ligand (acceptor) concentration as reference. For example, the `naproxen_280nm.in` file in the test provided indicates a reference HSA (human serum albumin) spectra at 5 μM and HSA-naproxen spectra at 10-100 μM ligand concentrations:
 ```
                         [HSA] [1N]
 HSA5_280nm.txt            5     0
@@ -93,7 +86,7 @@ HSA5+NAP10_280nm.txt      5    10
 HSA5+NAP50_280nm.txt      5    50
 HSA5+NAP100_280nm.txt     5   100
 ```
-Each file HSA5_280nm.txt contains a fluorescence spectra with X Y format indicating Emission wavelength and Intensity as the first two columns.
+Each file `HSA5_280nm.txt` etc contains the raw data of a fluorescence spectra with X Y format indicating Emission wavelength and Intensity on the first two columns.
 
 FRET_THEO options
 ```
