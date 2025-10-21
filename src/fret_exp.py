@@ -154,7 +154,7 @@ if efficiency_data:
     df = pd.DataFrame(efficiency_data, columns=['l_concentration', 'p_concentration', 'wavelength', 'intensity_at_wavelength', 'efficiency'])
     df_nonzero_l_concentration = df[df['l_concentration'] > 0].copy()  # Filter out the data for 0 l_concentration
 
-    # Calculate values
+    # Calculate X Y values
     x_values = np.log10(df_nonzero_l_concentration['l_concentration'])
     y_values = np.log10(F0_intensity / df_nonzero_l_concentration['intensity_at_wavelength'] - 1)
 
