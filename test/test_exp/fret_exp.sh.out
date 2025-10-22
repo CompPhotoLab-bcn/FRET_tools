@@ -35,27 +35,27 @@ Reference spectra (Protein donor only):
 Ligand concentration (acceptor): 0.0 μM
 Protein concentration (donor): 5.0 μM
 Wavelength: 315.0 nm
-Reference intensity at 315.0 nm 11.7857
+Reference intensity at 315.0 nm 2.7
 
 Calculation of binding constant: Linear regression data:
-log([L]): 1.0000, log(F0/F - 1): -0.4456
-log([L]): 1.6990, log(F0/F - 1): 0.0822
-log([L]): 2.0000, log(F0/F - 1): 0.3797
+log([L]): 1.0000, log(F0/F - 1): -0.7154
+log([L]): 1.6990, log(F0/F - 1): -0.2115
+log([L]): 2.0000, log(F0/F - 1): -0.0457
 
 Equation to fit:
 log(F0/F - 1) = log(Kb) + n log([L])
 
 Linear regression results:
-Slope (n, binding molecularity): 0.8129
-Intercept (log(Kb)): -1.2679
-Association constant Kb: 0.0540 μM⁻¹
-Dissociation constant Kd: 18.5314 μM
-Correlation coefficient (r): 0.9978
+Slope (n, binding molecularity): 0.6787
+Intercept (log(Kb)): -1.3873
+Association constant Kb: 0.0410 μM⁻¹
+Dissociation constant Kd: 24.3922 μM
+Correlation coefficient (r): 0.9983
 
 FRET efficiency uncorrected/corrected by percent of free protein vs complex:
    l_concentration  p_concentration  ...  percent_complex  efficiency_corrected
-1             10.0              5.0  ...         0.350492              0.752774
-2             50.0              5.0  ...         0.729593              0.749978
-3            100.0              5.0  ...         0.843659              0.836377
+1             10.0              5.0  ...         0.290763              0.555362
+2             50.0              5.0  ...         0.672113              0.566265
+3            100.0              5.0  ...         0.803909              0.589237
 
 [3 rows x 8 columns]
